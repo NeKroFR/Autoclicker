@@ -1,6 +1,14 @@
+'''
+Created by NeKro
+'''
+
+
+#import
 import pynput, time
 
-delay = float(input('delay :'))
+#init
+delay = float(input("delay :"))
+printdelay = str(delay)
 
-print(delay)
+print("\ndelay = " + printdelay)
 
