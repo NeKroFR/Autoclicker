@@ -15,5 +15,9 @@ delay = float(input("delay :"))
 printdelay = str(delay)
 print("\ndelay = " + printdelay)
 
-click = Button.left
-activate = KeyCode(char='²')
+button = Button.left
+mouse = Controller()
+
+for n in range(10000):
+    mouse.press(button)
+    mouse.release(button)
