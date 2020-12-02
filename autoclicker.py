@@ -14,8 +14,13 @@ print("\ndelay = " + printdelay)
 
 button = Button.left
 mouse = Controller()
+click = True
 
-for n in range(10000):
-    mouse.press(button)
-    mouse.release(button)
-    time.sleep(delay)
+
+while True:
+    if click == True:
+        mouse.press(button)
+        mouse.release(button)
+        time.sleep(delay)
+    else :
+        print('oof')
