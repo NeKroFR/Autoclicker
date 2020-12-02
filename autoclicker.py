@@ -18,17 +18,24 @@ click = int(0)
 start = int(1)
 
 while True:
-    if click == 1:
-        mouse.press(button)
-        mouse.release(button)
-        time.sleep(delay)
-    
+    if start == 0:
+        if click == 1:
+            click = 0
+            print(str(click))
+        if click == 0:
+            pass
+
     elif start == 1:
         if click == 1:
             pass
         if click == 0:
-            click =+1
+            click = 1
+            print(str(click))
         
-
+    elif click == 1:
+        mouse.press(button)
+        mouse.release(button)
+        time.sleep(delay)
+    
     else :
         pass
