@@ -14,11 +14,11 @@ print("\ndelay = " + printdelay)
 
 button = Button.left
 mouse = Controller()
-click = True
+click = int(1)
 
 
 while True:
-    if click == True:
+    if click == 1:
         mouse.press(button)
         mouse.release(button)
         time.sleep(delay)
