@@ -9,8 +9,7 @@ from pynput.keyboard import Listener, KeyCode
 
 #init
 delay = float(input("delay(s) :"))
-printdelay = str(delay)
-print("\ndelay = " + printdelay)
+print("\ndelay = " + str(delay))
 
 button = Button.left
 mouse = Controller()
@@ -22,25 +21,16 @@ while True:
         if click == 1:
             click = 0
             print(str(click))
-            pass
 
-        elif click == 0:
-            pass
-
-    elif start == 1:
-        if click == 1:
-            pass
-        
-        elif click == 0:
+    elif start == 1:        
+        if click == 0:
             click = 1
             print(str(click))
-            pass
         
     elif click == 1:
         mouse.press(button)
         mouse.release(button)
         time.sleep(delay)
-        pass
     
     else :
-        pass
+        print(' ')
